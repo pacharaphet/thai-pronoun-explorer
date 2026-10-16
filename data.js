@@ -8,7 +8,7 @@ const firstForms=[
 ['nuu','หนู','nǔː','Everyday','Children of any gender and many adult women use this with older or senior people. Adult male use is more relationship-specific.',['phii','title','kin','khun']],
 ['kuu','กู','kuː','Everyday','Rough self-reference used across genders. Close-group solidarity and hostility are both possible.',['mueng','name']],
 ['ai','ไอ','ai','Everyday','Borrowed English I. Used with foreigners unfamiliar with Thai pronoun conventions, or as a less rough alternative to กู–มึง in some groups.',['yu']],
-['name','ชื่อเล่น','tɕʰɯ̂ː-lên','Names and roles','A name can refer directly to the speaker. Frequent or conspicuous name-based self-reference can sound feminine, especially when overused, but it does not always have that effect. Interpretation depends on the speaker, relationship, and delivery.',['name','phii','kin','title','thoe']],
+['name','ชื่อเล่น','tɕʰɯ̂ː-lên','Names and roles','A name can refer directly to the speaker. Frequent or conspicuous name-based self-reference can sound somewhat feminine, especially when overused, but not always. It is also common for presenters to use their own name to create a more casual, approachable tone. The effect depends on the speaker, setting, relationship, and delivery.',['name','phii','kin','title','thoe']],
 ['phii','พี่','pʰîː','Names and roles','Speaker presents themself as older or senior; need not be a biological sibling.',['nong','name','nuu']],
 ['nong','น้อง','nɔ́ːŋ','Names and roles','Speaker presents themself as younger; can be affectionate, cute, or role-based.',['phii','name']],
 ['parent','แม่ / พ่อ','','Names and roles','Parent referring to themself with a child; extended or playful uses depend on the relationship.',['child','name','nuu']],
