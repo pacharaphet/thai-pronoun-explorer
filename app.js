@@ -10,4 +10,4 @@ let useAngsana=false;try{useAngsana=localStorage.getItem('thai-pronouns-font')==
 function applyFont(){document.body.classList.toggle('angsana',useAngsana);$('fontToggle').setAttribute('aria-pressed',String(useAngsana));$('fontToggle').textContent=useAngsana?'Using Angsana New. Click here to return to the original font':'Font too difficult to read? Click here to change to Angsana New';}
 $('fontToggle').onclick=()=>{useAngsana=!useAngsana;applyFont();try{localStorage.setItem('thai-pronouns-font',useAngsana?'angsana':'original');}catch{}};applyFont();
 
-$('resetExplorer').onclick=(event)=>{event.preventDefault();$('first').value='chan';populate('khun');tab(false);window.scrollTo({top:0,behavior:'smooth'});};
+
