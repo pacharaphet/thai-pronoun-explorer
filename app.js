@@ -5,3 +5,7 @@ $('first').addEventListener('change',()=>populate());$('second').addEventListene
 third.forEach(([word,roman,description])=>{const el=document.createElement('article');el.className='third-card';const h=document.createElement('h3');h.textContent=word;const s=document.createElement('small');s.textContent=roman;h.append(s);const p=document.createElement('p');p.textContent=description;el.append(h,p);$('thirdGrid').append(el);});
 initialize();
 $('share').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('toast').textContent='Link copied';$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',2500);}catch{$('toast').textContent='Copy the page address from your browser to share.';$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',5000);}};
+
+let useAngsana=false;try{useAngsana=localStorage.getItem('thai-pronouns-font')==='angsana';}catch{}
+function applyFont(){document.body.classList.toggle('angsana',useAngsana);$('fontToggle').setAttribute('aria-pressed',String(useAngsana));$('fontToggle').textContent=useAngsana?'Using Angsana New. Click here to return to the original font':'Font too difficult to read? Click here to change to Angsana New';}
+$('fontToggle').onclick=()=>{useAngsana=!useAngsana;applyFont();try{localStorage.setItem('thai-pronouns-font',useAngsana?'angsana':'original');}catch{}};applyFont();
